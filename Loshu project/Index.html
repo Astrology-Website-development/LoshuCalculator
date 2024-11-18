@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lo Shu Grid Numerology</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>✨ Lo Shu Grid Numerology ✨</h1>
+        <p>Unlock insights into your life through numerology!</p>
+      </header>
+
+      <main>
+        <section class="input-section">
+          <label for="dob">Date of Birth (DD/MM/YYYY):</label>
+          <input type="text" id="dob" placeholder="DD/MM/YYYY" required />
+
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
+
+          <button onclick="generateLoShuGrid()">Generate Grid</button>
+          <button onclick="clearResults()">Clear</button>
+        </section>
+
+        <section class="grid-section">
+          <h2>Your Lo Shu Grid</h2>
+          <div id="grid" class="grid"></div>
+        </section>
+
+        <section class="results-section">
+          <h2>Results</h2>
+          <div id="results" class="results"></div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
